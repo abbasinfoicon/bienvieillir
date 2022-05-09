@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Bienvieillir</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="format-decetion" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- meta description & keywords -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- favicon icon -->
+    <link rel='icon' type='image/x-icon' href="images/favicon-16x.png"/>
+    <!-- jquery library -->
+    <script type="text/javascript" src="vendor/javascripts/jquery.min.js"></script>
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="dist/main.css"/>
+
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if IE 8]>
+    <script type="text/javascript" src="vendor/javascripts/html5shiv.min.js"></script>
+    <script type="text/javascript" src="vendor/javascripts/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/ie8.css"/>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <html class="ie7"> <![endif]-->
+    <!--[if IE 8]>
+    <html class="ie8"> <![endif]-->
+    <!--[if IE 9]>
+    <html class="ie9"> <![endif]-->
+    <!--[if !IE]><!-->
+    <script>
+        if (/*@cc_on!@*/false) {
+            document.documentElement.className += 'ie10';
+        }
+    </script><!--<![endif]-->
+</head>
+<body>
+
+
+<!--====== header ======-->
+<header class="header">
+
+    <!--=== nav-dark ===-->
+    <div class="nav-dark">
+        <div class="container">
+            <!-- ul left -->
+            <ul class="left">
+                <li class="vour-etes">
+                    <div class="vertical-block">
+                        <div class="cell">Vous êtes :</div>
+                    </div>
+                </li>
+                <li>
+                    <!-- ul age-spacify -->
+                    <ul class="age-spacify">
+                        <li>
+                            <div class="vertical-block">
+                                <div class="cell">senior</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vertical-block">
+                                <div class="cell">aidant</div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- ul right -->
+            <ul class="right">
+                <li>
+                    <div class="vertical-block">
+                        <div class="cell">
+                            <a href="#">
+                                se connecter
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vertical-block">
+                        <div class="cell">
+                            <a href="#">
+                                contacter<br>
+                                un conseiller
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vertical-block">
+                        <div class="cell">
+                            <a href="#">
+                                faire une demande<br>
+                                de placement
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--=== nav-white ===-->
+    <div class="nav-white">
+        <div class="container">
+            <div class="row">
+                <!-- logo-nav -->
+                <div class="col-sm-6 col-xs-12">
+                    <a href="index.html" class="nav-brand"><img src="images/logo-header.png" alt="no-image"></a>
+                </div>
+
+                <!-- search-nav -->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="search-nav">
+                        <form action="#" name="">
+                            <input type="text" placeholder="Quelle est votre question ? Qu’est ce que vous recherchez ?"
+                                   class="form-control">
+                            <button type="submit" class="submit-btn"><img src="images/search-icon.png" alt="no-image">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=== nav-informe ===-->
+    <div class="nav-informe">
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="#">Etre<br>
+                        informé</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Etre<br>
+                        accompagné
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Etre<br>
+                        orienté</a>
+                </li>
+                <li class="darkblue active">
+                    <a href="private-area.html">
+                        Votre<br>
+                        espace privé
+                    </a>
+                </li>
+            </ul>
+
+            <!--=== toggle-nav-button ===-->
+            <div class="toggle-nav-button">
+                <a href="javascript:;" data-toggle="modal" data-target="#myPopup"><img src="images/toggle-bar.png"
+                                                                                       align="no-image"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--=== breadcrumb-ul ===-->
+    <div class="container">
+        <ul class="breadcrumb-ul">
+            <li><a href="#">Accueil</a>&nbsp /</li>
+            <li><a href="#">Votre Espace privée</a>&nbsp /</li>
+            <li>Demande de placement</li>
+        </ul>
+        <ul class="view-zoom">
+            <li class="plus"><a href="#">A+</a></li>
+            <li><a href="#">A-</a></li>
+        </ul>
+    </div>
+
+</header>
+<!--=== close header ===-->
+
+<!--=== application-placement ===-->
+
+<div class="application-placement">
+    <div class="container">
+        <div class="row">
+            <!--left-colume-4-->
+            <div class="col-md-4">
+                <!--your-service-->
+                <div class="your-services">
+                    <h3>Vos services</h3>
+                    <!--line-small-->
+                    <div class="line"></div>
+
+                    <a href="logged.html"><h4>Contenus favoris</h4></a>
+                    <a href="application-placement.html"><h4 class="active">demande de placement</h4></a>
+
+                    <a href="contact-an-advisor.html"><h4>contacter <br> un conseiller</h4></a>
+                    <a href="personal-informations.html"><h4>informations personnelles</h4></a>
+                </div>
+                <!--any-question-query-->
+                <div class="qustion-query">
+                    <div class="text-middle">
+                        <p>vous avez des interrogations</p>
+                        <h3>prenez un rdv auprès d’un conseiller</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!--right-colume-8-->
+            <div class="col-md-8">
+                <div class="chataignoux">
+                    <p>Bonjour Cédric Chataignoux</p>
+                    <div class="line"></div>
+
+                    <h3>Demande de placement</h3>
+                    <div class="line"></div>
+
+                    <!--The resident-->
+                    <div class="the-resident">
+                        <p>Le résident</p>
+
+                        <form action="">
+                            <div class="form-group">
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" checked> Madame
+                                </label>
+                                <label class="radio-inline">
+                                    <input type="radio" name="optradio" checked> Monsieur *
+                                </label>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Nom du résident *">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Prénom du résident *">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 form-group pr-5">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Numéro de téléphone *">
+                                </div>
+
+                                <div class="col-md-6 form-group pl-5">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Âge du résident *</option>
+                                        <option value="">18</option>
+                                        <option value="">19</option>
+                                        <option value="">20</option>
+                                        <option value="">22</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <a href="" class="btn btn-new-resident">+ Ajouter un deuxième résident</a>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!--Your wishes-->
+                    <div class="your-wishes">
+                        <p>Vos souhaits</p>
+
+                        <form action="">
+                            <div class="row">
+                                <div class="col-md-6 form-group pr-5">
+                                    <input type="text" name="" id="" class="form-control"
+                                           placeholder="Région souhaitée *">
+                                </div>
+
+                                <div class="col-md-6 form-group pl-5">
+                                    <input type="text" name="" id="" class="form-control"
+                                           placeholder="Département souhaité">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 form-group pr-5">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Ville souhaitée">
+                                </div>
+
+                                <div class="col-md-6 form-group pl-5">
+                                    <input type="text" name="" id="" class="form-control"
+                                           placeholder="Résidence souhaitée">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 form-group pr-5">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Type d’accueil *</option>
+                                        <option value="">18</option>
+                                        <option value="">19</option>
+                                        <option value="">20</option>
+                                        <option value="">22</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 form-group pl-5">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Délai d’entrée prévu *</option>
+                                        <option value="">18</option>
+                                        <option value="">19</option>
+                                        <option value="">20</option>
+                                        <option value="">22</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 form-group pr-5">
+                                    <select name="" id="" class="form-control">
+                                        <option value="">Type de chambre souhaitée *</option>
+                                        <option value="">18</option>
+                                        <option value="">19</option>
+                                        <option value="">20</option>
+                                        <option value="">22</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6 form-group pl-5">
+                                    <input type="text" name="" id="" class="form-control" placehoder="Commentaires">
+                                </div>
+                            </div>
+
+
+                        </form>
+                    </div>
+
+                    <!--The contact-->
+                    <div class="the-contact">
+                        <p>Le contact</p>
+                        <form action="">
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Nom du contact *">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Prénom du contact">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Adresse e-mail *">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control" placeholder="Adresse postale">
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6 form-group pr-5">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Code postal">
+                                </div>
+
+                                <div class="col-md-6 form-group pl-5">
+                                    <input type="text" name="" id="" class="form-control" placeholder="Ville">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="" id="" class="form-control"
+                                       placeholder="Numéro de téléphone *">
+                            </div>
+
+                            <!--mandatory-text-->
+                            <p class="mandatory">* Champs obligatoire</p>
+
+                            <!--checkbox-->
+                            <div class="form-group">
+                                <h4 class="checkbox-padding">
+                                    J’accepte d’être mis(e) en relation ou / et de recevoir des offres de Bien Vivre Sa Retraite
+                                    <br>et de ses partenaires
+                                </h4>
+
+                                <div class="control-group">
+                                    <label class="control control-checkbox">
+                                        Oui &nbsp
+                                        <input type="checkbox"/>
+                                        <div class="control_indicator"></div>
+                                    </label>
+
+                                    <label class="control control-checkbox"> non
+                                        <input type="checkbox"/>
+                                        <div class="control_indicator"></div>
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!--send my request-->
+                            <div class="form-group">
+                                <a href="" class="btn btn-send" data-toggle="modal" data-target="#contactPopup">envoyer ma demande</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!--=== close application-placement ===-->
+
+<!--=== modal code ===-->
+<!-- Modal -->
+<div id="contactPopup" class="modal fade myModal" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!--modal-body-->
+            <div class="modal-body">
+
+                <p>acceptez-vous d’être mis(e) en relation <br>
+                    ou/et de recevoir Des offres de bien vivre <br>
+                    sa retraite et de ses partenaires ?</p>
+            </div>
+            <!--modal-footer-->
+            <div class="modal-footer">
+                <ul class="footer-modal-btn">
+                    <li><a href="#" class="btn btn-popup1 width-106">oui</a></li>
+                    <li><a href="#" class="btn btn-popup1 width-106">non</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!--=== close modal code ===-->
+
+<!--=== newsletter-block ===-->
+<div class="newsletter-block">
+    <div class="container">
+        <h6>Inscription newsletter</h6>
+        <form action="#" name="">
+            <input type="text" placeholder="Saisir son adresse e mail" class="form-control">
+            <button class="btn">valider</button>
+        </form>
+    </div>
+</div>
+<!--=== close newsletter-block ===-->
+
+<!--========== footer-area ==========-->
+<div class="footer-area">
+    <div class="container top-footer">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <a href="index.html" class="nav-brand"><img src="images/logo-header.png" alt="no-image"></a>
+                <p class="nav-brand-text">Lorem ipsum terrtium non datur putandum est register caudalias, et ingitur.
+                    Lorem ipsum terrtium non
+                    datur putandum est register </p>
+            </div>
+
+            <div class="col-sm-8 col-xs-12">
+                <div class="nav-informe">
+                    <ul>
+                        <li>
+                            <a href="#">Etre<br>
+                                orienté</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Etre<br>
+                                accompagné
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Etre<br>
+                                orienté</a>
+                        </li>
+                        <li class="darkblue">
+                            <a href="#">
+                                Votre<br>
+                                espace privé
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 text-center">
+                <div class="partenariat">
+                    En partenariat avec : <a href="#"><img src="images/orpea.jpg" alt="orpea-image"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-footer">
+        <div class="container">
+            <ul>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--======= close footer-area =======-->
+
+<!--========== Javascript attachment files ==========-->
+<!--  bootstrap script -->
+<script type="text/javascript" src="vendor/javascripts/bootstrap.min.js"></script>
+<!-- jquery library -->
+<script type="text/javascript" src="vendor/javascripts/smoothscroll.js"></script>
+<!-- custom javascript -->
+<script type="text/javascript" src="vendor/js/custom.js"></script>
+<!--======= Close Javascript attachment files =======-->
+
+</body>
+</html>

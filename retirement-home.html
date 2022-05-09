@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Bienvieillir</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="format-decetion" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- meta description & keywords -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- favicon icon -->
+    <link rel='icon' type='image/x-icon' href="images/favicon-16x.png"/>
+    <!-- jquery library -->
+    <script type="text/javascript" src="vendor/javascripts/jquery.min.js"></script>
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="dist/main.css"/>
+
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if IE 8]>
+    <script type="text/javascript" src="vendor/javascripts/html5shiv.min.js"></script>
+    <script type="text/javascript" src="vendor/javascripts/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/ie8.css"/>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <html class="ie7"> <![endif]-->
+    <!--[if IE 8]>
+    <html class="ie8"> <![endif]-->
+    <!--[if IE 9]>
+    <html class="ie9"> <![endif]-->
+    <!--[if !IE]><!-->
+    <script>
+        if (/*@cc_on!@*/false) {
+            document.documentElement.className += 'ie10';
+        }
+    </script><!--<![endif]-->
+</head>
+<body>
+
+
+<!--====== header ======-->
+<header class="header">
+
+    <!--=== nav-dark ===-->
+    <div class="nav-dark">
+        <div class="container">
+            <!-- ul left -->
+            <ul class="left">
+                <li class="vour-etes">
+                    <div class="vertical-block">
+                        <div class="cell">Vous êtes :</div>
+                    </div>
+                </li>
+                <li>
+                    <!-- ul age-spacify -->
+                    <ul class="age-spacify">
+                        <li>
+                            <div class="vertical-block">
+                                <div class="cell">senior</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="vertical-block">
+                                <div class="cell">aidant</div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+            <!-- ul right -->
+            <ul class="right">
+                <li>
+                    <div class="vertical-block">
+                        <div class="cell">
+                            <a href="#">
+                                se connecter
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vertical-block">
+                        <div class="cell">
+                            <a href="#">
+                                contacter<br>
+                                un conseiller
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="vertical-block">
+                        <div class="cell">
+                            <a href="#">
+                                faire une demande<br>
+                                de placement
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!--=== nav-white ===-->
+    <div class="nav-white">
+        <div class="container">
+            <div class="row">
+                <!-- logo-nav -->
+                <div class="col-sm-6 col-xs-12">
+                    <a href="index.html" class="nav-brand"><img src="images/logo-header.png" alt="no-image"></a>
+                </div>
+
+                <!-- search-nav -->
+                <div class="col-sm-6 col-xs-12">
+                    <div class="search-nav">
+                        <form action="#" name="">
+                            <input type="text" placeholder="Quelle est votre question ? Qu’est ce que vous recherchez ?"
+                                   class="form-control">
+                            <button type="submit" class="submit-btn"><img src="images/search-icon.png" alt="no-image">
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--=== nav-informe ===-->
+    <div class="nav-informe">
+        <div class="container">
+            <ul>
+                <li class="active">
+                    <a href="#">Etre<br>
+                        informé</a>
+                </li>
+                <li>
+                    <a href="#">
+                        Etre<br>
+                        accompagné
+                    </a>
+                </li>
+                <li>
+                    <a href="#">Etre<br>
+                        orienté</a>
+                </li>
+                <li class="darkblue">
+                    <a href="#">
+                        Votre<br>
+                        espace privé
+                    </a>
+                </li>
+            </ul>
+
+            <!--=== toggle-nav-button ===-->
+            <div class="toggle-nav-button">
+                <a href="javascript:;" data-toggle="modal" data-target="#myPopup"><img src="images/toggle-bar.png"
+                                                                                       align="no-image"></a>
+            </div>
+        </div>
+    </div>
+
+    <!--=== breadcrumb-ul ===-->
+    <div class="container">
+        <ul class="breadcrumb-ul">
+            <li><a href="#">Accueil</a>&nbsp /</li>
+            <li><a href="#">Être orienté</a>&nbsp /</li>
+            <li>Trouver une maison de retraite</li>
+        </ul>
+        <ul class="view-zoom">
+            <li class="plus"><a href="#">A+</a></li>
+            <li><a href="#">A-</a></li>
+        </ul>
+    </div>
+
+</header>
+<!--=== close header ===-->
+
+<!-- modal code -->
+<!-- Modal -->
+<div id="myPopup" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Bien vivre <br>
+                    sa retraite</h4>
+            </div>
+            <div class="modal-body">
+                <h3>Nos thématiques</h3>
+                <ul class="thema">
+                    <li>
+                        <a href="#">
+                            <div class="vertical-block">
+                                <div class="cell">COMMENT BIEN VIVRE ?</div>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="vertical-block">
+                                <div class="cell">QUELLES SOLUTIONS D’HEBERGEMENT ?</div>
+                            </div>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            <div class="vertical-block">
+                                <div class="cell">QUEL BUDGET ET SOLUTIONS DE FINANCEMENT ?</div>
+                            </div>
+                        </a>
+
+                    </li>
+                </ul>
+
+                <h3>Nos services</h3>
+                <ul class="sevices">
+                    <li><a href="#">ANNUAIRE</a></li>
+                    <li><a href="#">PLACEMENT</a></li>
+                    <li><a href="#">TELECONSEILLER</a></li>
+                    <li><a href="#">SIMULATEUR</a></li>
+                    <li><a href="#">ESPACE PERSO</a></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</div>
+<!-- end-Modal -->
+
+<!--=== retirement-home  ===-->
+<div class="retirement-home">
+    <div class="container">
+        <div class="hding-h3">
+            <div class="line"></div>
+            <h3>trouver une maison de retraite</h3>
+            <p>Lorem ipsum terrtium non datur putandum est register caudalias, et ingitur. Lorem ipsum terrtium non
+                datur putandum est register caudalias, et ingitur. Sin dolor non datur putandum est register psum
+                terrtium non datur putandum est register caudalias, et ingitur. Lorem ipsum terrtium non datur putandum
+                est register caudalias, et ingitur. </p>
+        </div>
+
+        <div class="indicate-city">
+            <form action="">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-6 form-group">
+                        <input type="text" placeholder="indiquer la ville" class="form-control">
+                        <button type="submit" class="submit-btn"><img src="images/search-icon-pink.png" alt="no-image">
+                        </button>
+                    </div>
+
+                    <div class="col-lg-4 col-sm-6 form-group">
+                        <select name="" id="" class="form-control">
+                            <option value="">Rayon en km</option>
+                            <option value="">5 km</option>
+                            <option value="">10 km</option>
+                            <option value="">15 km</option>
+                            <option value="">20 km</option>
+                            <option value="">25 km</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <!--google-map-->
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1371547.2039170868!2d0.8587333150487136!3d49.209306359050395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e7012d2102b553%3A0x33743e4f961c4ef4!2s60000+Beauvais%2C+France!5e0!3m2!1sen!2sin!4v1548055166081"
+                width="100%" height="516" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    </div>
+
+    <div class="item-user">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <h3><span>52 </span> résultats pour votre recherche</h3>
+                </div>
+                <div class="col-md-6 right-left">
+                    <ul>
+                        <li><span>afficher</span></li>
+                        <li><input type="number" name="" id="" class="form-control"></li>
+                        <li><span>éléments</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="containera">
+            <div class="table-responsive results-search">
+                <table class="table table-hover table-striped">
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>photo</th>
+                        <th>nom</th>
+                        <th>localité</th>
+                        <th>type de séjour</th>
+                        <th>Téléphone</th>
+                    </tr>
+                    </thead>
+
+                    <tbody>
+                    <tr class="active">
+                        <td class="table-id">1</td>
+                        <td class="img-td">
+                            <div class="img-overlay">
+                                <img src="images/img1.jpg" alt="" class="img-responsive bg-img">
+                                <img src="images/icon1.png" alt="" class="img-responsive ov-img">
+                            </div>
+                        </td>
+                        <td>Lorem ipsum sin <br> dolor</td>
+                        <td>Saint-nazaire</td>
+                        <td>maison de <br> retraite</td>
+                        <td>03 20 01 02 03 <br> +333 20 01 02 03</td>
+
+                    </tr>
+
+                    <tr>
+                        <td class="table-id">2</td>
+                        <td>
+                            <div class="img-overlay">
+                                <img src="images/img1.jpg" alt="" class="img-responsive bg-img">
+                                <img src="images/icon1.png" alt="" class="img-responsive ov-img">
+                            </div>
+                        </td>
+                        <td>Lorem ipsum sin <br> dolor</td>
+                        <td>angers</td>
+                        <td>maison de <br> retraite</td>
+                        <td>03 20 01 02 03 <br> +333 20 01 02 03</td>
+
+
+                    <tr>
+                        <td class="table-id">3</td>
+                        <td>
+                            <div class="img-overlay">
+                                <img src="images/img1.jpg" alt="" class="img-responsive bg-img">
+                                <img src="images/icon1.png" alt="" class="img-responsive ov-img">
+                            </div>
+                        </td>
+                        <td>Lorem ipsum sin <br> dolor</td>
+                        <td>besançon</td>
+                        <td>maison de <br> retraite</td>
+                        <td>03 20 01 02 03 <br> +333 20 01 02 03</td>
+
+
+                    <tr>
+                        <td class="table-id">4</td>
+                        <td>
+                            <div class="img-overlay">
+                                <img src="images/img1.jpg" alt="" class="img-responsive bg-img">
+                                <img src="images/icon1.png" alt="" class="img-responsive ov-img">
+                            </div>
+                        </td>
+                        <td>Lorem ipsum sin <br> dolor</td>
+                        <td>saint-brioure</td>
+                        <td>maison de <br> retraite</td>
+                        <td>03 20 01 02 03 <br> +333 20 01 02 03</td>
+
+
+                    <tr>
+                        <td class="table-id">5</td>
+                        <td>
+                            <div class="img-overlay">
+                                <img src="images/img1.jpg" alt="" class="img-responsive bg-img">
+                                <img src="images/icon1.png" alt="" class="img-responsive ov-img">
+                            </div>
+                        </td>
+                        <td>Lorem ipsum sin <br> dolor</td>
+                        <td>saint andré- <br>lez-lille</td>
+                        <td>maison de <br> retraite</td>
+                        <td>03 20 01 02 03 <br> +333 20 01 02 03</td>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="container">
+            <!--pager-and-button-->
+            <div class="pager-and-button">
+                <div class="row">
+                    <!--previous-button-->
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <a href="#" class="btn btn-previous">Précédent</a>
+                    </div>
+
+                    <div class="col-md-6 col-md-6 col-sm-6 col-xs-12 text-center">
+                        <ul class="pager-info">
+                            <li class="active"><a href="#">1</a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li>. . .</li>
+                            <li><a href="#">7</a></li>
+                        </ul>
+                    </div>
+
+                    <!--next-button-->
+                    <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                        <a href="#" class="btn btn-next">Suivant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--=== close retirement-home ===-->
+
+<!--=== newsletter-block ===-->
+<div class="newsletter-block">
+    <div class="container">
+        <h6>Inscription newsletter</h6>
+        <form action="#" name="">
+            <input type="text" placeholder="Saisir son adresse e mail" class="form-control">
+            <button class="btn">valider</button>
+        </form>
+    </div>
+</div>
+<!--=== close newsletter-block ===-->
+
+<!--========== footer-area ==========-->
+<div class="footer-area">
+    <div class="container top-footer">
+        <div class="row">
+            <div class="col-sm-4 col-xs-12">
+                <a href="index.html" class="nav-brand"><img src="images/logo-header.png" alt="no-image"></a>
+                <p class="nav-brand-text">Lorem ipsum terrtium non datur putandum est register caudalias, et ingitur.
+                    Lorem ipsum terrtium non
+                    datur putandum est register </p>
+            </div>
+
+            <div class="col-sm-8 col-xs-12">
+                <div class="nav-informe">
+                    <ul>
+                        <li>
+                            <a href="#">Etre<br>
+                                orienté</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                Etre<br>
+                                accompagné
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">Etre<br>
+                                orienté</a>
+                        </li>
+                        <li class="darkblue">
+                            <a href="#">
+                                Votre<br>
+                                espace privé
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 text-center">
+                <div class="partenariat">
+                    En partenariat avec : <a href="#"><img src="images/orpea.jpg" alt="orpea-image"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright-footer">
+        <div class="container">
+            <ul>
+                <li><a href="#">Copyright</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Nous contacter</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--======= close footer-area =======-->
+
+<!--========== Javascript attachment files ==========-->
+<!--  bootstrap script -->
+<script type="text/javascript" src="vendor/javascripts/bootstrap.min.js"></script>
+<!-- jquery library -->
+<script type="text/javascript" src="vendor/javascripts/smoothscroll.js"></script>
+<!-- custom javascript -->
+<script type="text/javascript" src="vendor/js/custom.js"></script>
+<!--======= Close Javascript attachment files =======-->
+
+</body>

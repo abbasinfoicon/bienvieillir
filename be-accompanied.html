@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>Bienvieillir</title>
+    <!-- meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE"/>
+    <meta name="format-decetion" content="telephone=no"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <!-- meta description & keywords -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <!-- favicon icon -->
+    <link rel='icon' type='image/x-icon' href="images/favicon-16x.png"/>
+    <!-- jquery library -->
+    <script type="text/javascript" src="vendor/javascripts/jquery.min.js"></script>
+    <!-- css links -->
+    <link rel="stylesheet" type="text/css" href="dist/main.css"/>
+
+    <!-- HTML5 Shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if IE 8]>
+    <script type="text/javascript" src="vendor/javascripts/html5shiv.min.js"></script>
+    <script type="text/javascript" src="vendor/javascripts/respond.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="dist/ie8.css"/>
+    <![endif]-->
+    <!--[if lte IE 7]>
+    <html class="ie7"> <![endif]-->
+    <!--[if IE 8]>
+    <html class="ie8"> <![endif]-->
+    <!--[if IE 9]>
+    <html class="ie9"> <![endif]-->
+    <!--[if !IE]><!-->
+    <script>
+        if (/*@cc_on!@*/false) {
+            document.documentElement.className += 'ie10';
+        }
+    </script><!--<![endif]-->
+</head>
+<div>
+
+
+    <!--====== header ======-->
+    <header class="header">
+
+        <!--=== nav-dark ===-->
+        <div class="nav-dark">
+            <div class="container">
+                <!-- ul left -->
+                <ul class="left">
+                    <li class="vour-etes">
+                        <div class="vertical-block">
+                            <div class="cell">Vous êtes :</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- ul age-spacify -->
+                        <ul class="age-spacify">
+                            <li>
+                                <div class="vertical-block">
+                                    <div class="cell">senior</div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="vertical-block">
+                                    <div class="cell">aidant</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- ul right -->
+                <ul class="right">
+                    <li>
+                        <div class="vertical-block">
+                            <div class="cell">
+                                <a href="#">
+                                    se connecter
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vertical-block">
+                            <div class="cell">
+                                <a href="#">
+                                    contacter<br>
+                                    un conseiller
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="vertical-block">
+                            <div class="cell">
+                                <a href="#">
+                                    faire une demande<br>
+                                    de placement
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--=== nav-white ===-->
+        <div class="nav-white">
+            <div class="container">
+                <div class="row">
+                    <!-- logo-nav -->
+                    <div class="col-sm-6 col-xs-12">
+                        <a href="index.html" class="nav-brand"><img src="images/logo-header.png" alt="no-image"></a>
+                    </div>
+
+                    <!-- search-nav -->
+                    <div class="col-sm-6 col-xs-12">
+                        <div class="search-nav">
+                            <form action="#" name="">
+                                <input type="text"
+                                       placeholder="Quelle est votre question ? Qu’est ce que vous recherchez ?"
+                                       class="form-control">
+                                <button type="submit" class="submit-btn"><img src="images/search-icon.png"
+                                                                              alt="no-image">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--=== nav-informe ===-->
+        <div class="nav-informe">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="#">Etre<br>
+                            informé</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            Etre<br>
+                            accompagné
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Etre<br>
+                            orienté</a>
+                    </li>
+                    <li class="darkblue">
+                        <a href="#">
+                            Votre<br>
+                            espace privé
+                        </a>
+                    </li>
+                </ul>
+
+                <!--=== toggle-nav-button ===-->
+                <div class="toggle-nav-button">
+                    <a href="javascript:;" data-toggle="modal" data-target="#myPopup"><img src="images/toggle-bar.png"
+                                                                                           align="no-image"></a>
+                </div>
+            </div>
+        </div>
+
+        <!--=== breadcrumb-ul ===-->
+        <div class="container">
+            <ul class="breadcrumb-ul">
+                <li><a href="#">Accueil</a>&nbsp /</li>
+                <li><a href="#">Être accompagné</a>&nbsp /</li>
+                <li>Nom du simulateur</li>
+            </ul>
+            <ul class="view-zoom">
+                <li class="plus"><a href="#">A+</a></li>
+                <li><a href="#">A-</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <!--=== close header ===-->
+
+    <!-- modal code -->
+    <!-- Modal -->
+    <div id="myPopup" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Bien vivre <br>
+                        sa retraite</h4>
+                </div>
+                <div class="modal-body">
+                    <h3>Nos thématiques</h3>
+                    <ul class="thema">
+                        <li>
+                            <a href="#">
+                                <div class="vertical-block">
+                                    <div class="cell">COMMENT BIEN VIVRE ?</div>
+                                </div>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="vertical-block">
+                                    <div class="cell">QUELLES SOLUTIONS D’HEBERGEMENT ?</div>
+                                </div>
+                            </a>
+
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <div class="vertical-block">
+                                    <div class="cell">QUEL BUDGET ET SOLUTIONS DE FINANCEMENT ?</div>
+                                </div>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                    <h3>Nos services</h3>
+                    <ul class="sevices">
+                        <li><a href="#">ANNUAIRE</a></li>
+                        <li><a href="#">PLACEMENT</a></li>
+                        <li><a href="#">TELECONSEILLER</a></li>
+                        <li><a href="#">SIMULATEUR</a></li>
+                        <li><a href="#">ESPACE PERSO</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- end-Modal -->
+
+
+    <!--=== Be Accompanied ===-->
+
+    <div class="be-accompanied">
+        <div class="container">
+            <div class="banner-img margin-none">
+                <img src="images/banner-accompanied.jpg" alt="" class="img-responsive">
+            </div>
+
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="bien-content">
+                        <h5>theme : SIMULATEUR</h5>
+                        <div class="line"></div>
+                        <h3>NOM DU SIMULATEUR </h3>
+
+                        <!--accompanied-pre-->
+                        <div class="accompanied-pre">
+                            <p>Ce simulateur permet d’estimer le montant de l’<spna>allocation personnalisée d’autonomie<spna> (APA) versée en <spna>établissement d’hébergement pour personnes âgées dépendantes<spna> (EHPAD).</p>
+
+                            <p>Le prix d’un <strong>EHPAD</strong> comprend trois types de tarifs : le forfait soins, le tarif hébergement et le tarif dépendance. Seul ce dernier est pris en compte pour le calcul de l’<strong>APA</strong>.</p>
+
+                            <p>L’APA en maison de retraite médicalisée est égale à la différence entre le <strong>tarif dépendance</strong> de l’établissement et la participation laissée à la charge du bénéficiaire.
+                            </p>
+
+                            <p>Le montant de l’<strong>allocation personnalisée d’autonomie</strong> sera ainsi calculé à partir des paramètres suivants :</p>
+
+                            <ul>
+                                <li>La classification de la personne en perte d’autonomie dans la grille AGGIR, allant de GIR 1 à GIR 6 (la grille AGGIR mesure le degré de dépendance de la personne qui demande l’APA)</li>
+                                <li>Le tarif dépendance de l’établissement correspondant au degré de perte d’autonomie de la grille AGGIR</li>
+                                <li>Le tarif dépendance de l’établissement correspondant au niveau de dépendance GIR 5 et GIR 6</li>
+                                <li>Les revenus mensuels de la personne en perte d’autonomie retenus pour le calcul de l’APA</li>
+                            </ul>
+
+                            <p>Vous devez vous munir de ces 4 éléments avant de commencer la simulation. <br>
+                                Le montant de l’APA en établissement se calcule différemment de celui de l’APA à domicile.</p>
+                        </div>
+
+                        <!--facilisis-->
+                        <div class="facilisis">
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="">Eget molestie elit facilisis ?</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Suspendisse iaculis mauris vitae orci faucibus, eget molestie elit facilisis ?</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Suspendisse iaculis mauris vitae orci faucibus ?</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="">Duis congue nunc ex. Suspendisse semper ac mauris non pharetra. Suspendisse iaculis mauris vitae orci faucibus, eget molestie elit facilisis ?</label>
+                                    <input type="text" name="" id="" class="form-control">
+                                </div>
+
+                                <div class="form-group1 text-center">
+                                    <a href="#" class="btn btn-result">Voir LE RÉSULTAT</a>
+                                </div>
+                            </form>
+                        </div>
+
+
+                        <div class="your-result">
+                            <div class="text-middle">
+                                <h4>VOTRE RÉSULTAT </h4>
+                                <h3>200</h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--right-bien-contant-->
+                <div class="col-md-4">
+                    <div class="right-bien-contant">
+                        <div class="text-center w-75">
+                            <ul>
+                                <li><a href="#">Pour vous faciliter la</a></li>
+                                <li><a href="#">consultation de notre site</a></li>
+                                <li><a href="#">internet, nous vous</a></li>
+                                <li><a href="#">proposons la création de</a></li>
+                            </ul>
+
+                            <h3>votre espace privé</h3>
+                        </div>
+                    </div>
+
+                    <div class="right-perple-sec">
+                        <h3>Thematiques</h3>
+                        <div class="line"></div>
+
+                        <ul>
+                            <li><a href="#">lorem <br><span>8 articles</span></a></li>
+                            <li><a href="#">lorem <br><span>8 articles</span></a></li>
+                            <li><a href="#">lorem <br><span>8 articles</span></a></li>
+                            <li><a href="#">lorem <br><span>8 articles</span></a></li>
+                            <li><a href="#">lorem <br><span>8 articles</span></a></li>
+                            <li><a href="#">lorem <br><span>8 articles</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="right-bien-contant gradint-2">
+                        <div class="text-center w-90">
+                            <p>vous avez des interrogations</p>
+                            <h3>prenez un rdv auprès d’un conseiller</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--autres-->
+            <div class="row mobile-width">
+                <div class="col-md-8">
+                    <div class="autres">
+                        <h3>Autres articles conseillés</h3>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="autres-section">
+                                <img src="images/img1.jpg" alt="" class="img-responsive">
+                                <p>theme : coaching</p>
+                                <div class="line"></div>
+                                <h3>Lorem ipsum dolor sit <br> amet, consectetur <br> adipiscing</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xs-6">
+                            <div class="right-bien-contant h-222">
+                                <div class="text-center w-90">
+                                    <p>utiliser nos simulateurs :</p>
+                                    <h3>aides et coûts</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 col-xs-6">
+                            <div class="autres-section">
+                                <img src="images/img2.jpg" alt="" class="img-responsive">
+                                <p>theme : annuaire</p>
+                                <div class="line"></div>
+                                <h3>Lorem ipsum dolor sit <br> amet, consectetur <br> adipiscing</h3>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-xs-6">
+                            <div class="autres-section">
+                                <img src="images/img3.jpg" alt="" class="img-responsive">
+                                <p>theme : aide</p>
+                                <div class="line"></div>
+                                <h3>Lorem ipsum dolor sit <br> amet, consectetur <br> adipiscing</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--=== close Be Accompanied ===-->
+
+
+    <!--=== newsletter-block ===-->
+    <div class="newsletter-block">
+        <div class="container">
+            <h6>Inscription newsletter</h6>
+            <form action="#" name="">
+                <input type="text" placeholder="Saisir son adresse e mail" class="form-control">
+                <button class="btn">valider</button>
+            </form>
+        </div>
+    </div>
+    <!--=== close newsletter-block ===-->
+
+    <!--========== footer-area ==========-->
+    <div class="footer-area">
+        <div class="container top-footer">
+            <div class="row">
+                <div class="col-sm-4 col-xs-12">
+                    <a href="index.html" class="nav-brand"><img src="images/logo-header.png" alt="no-image"></a>
+                    <p class="nav-brand-text">Lorem ipsum terrtium non datur putandum est register caudalias, et
+                        ingitur.
+                        Lorem ipsum terrtium non
+                        datur putandum est register </p>
+                </div>
+
+                <div class="col-sm-8 col-xs-12">
+                    <div class="nav-informe">
+                        <ul>
+                            <li>
+                                <a href="#">Etre<br>
+                                    orienté</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Etre<br>
+                                    accompagné
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Etre<br>
+                                    orienté</a>
+                            </li>
+                            <li class="darkblue">
+                                <a href="#">
+                                    Votre<br>
+                                    espace privé
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-xs-12 text-center">
+                    <div class="partenariat">
+                        En partenariat avec : <a href="#"><img src="images/orpea.jpg" alt="orpea-image"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-footer">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Copyright</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--======= close footer-area =======-->
+
+    <!--========== Javascript attachment files ==========-->
+    <!--  bootstrap script -->
+    <script type="text/javascript" src="vendor/javascripts/bootstrap.min.js"></script>
+    <!-- jquery library -->
+    <script type="text/javascript" src="vendor/javascripts/smoothscroll.js"></script>
+    <!-- custom javascript -->
+    <script type="text/javascript" src="vendor/js/custom.js"></script>
+    <!--======= Close Javascript attachment files =======-->
+
+    </body>
+</html>
