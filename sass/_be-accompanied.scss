@@ -1,0 +1,112 @@
+.be-accompanied {
+  @include full-width;
+
+  .bien-content {
+    h3 {
+      margin: 25px 0px 35px;
+    }
+
+    h5 {
+      margin-bottom: 16px;
+    }
+  }
+
+  .accompanied-pre {
+    p {
+      font-size: 14px;
+      color: $lightblk;
+      margin: 13px 0px 0 0px;
+
+      spna {
+        color: $pinkcolor;
+      }
+    }
+
+    ul {
+      list-style: initial;
+      margin: 0;
+      padding: 0px 0px 0px 15px;
+
+      li {
+
+      }
+    }
+  }
+
+  //facilisis
+  .facilisis {
+    background: $lightgry;
+    padding: 40px 20px;
+    margin: 35px 0px;
+
+    //form
+    form {
+      .form-group {
+        margin-bottom: 33px;
+
+        label {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 12px;
+          line-height: 1.2;
+        }
+
+        input {
+          height: 44px;
+          @include border-radius(22px);
+          @include box-shadow(none);
+        }
+
+
+      }
+
+      .btn-result {
+        font-size: 13.93px;
+        text-transform: uppercase;
+        color: $white;
+        background: $pinkcolor;
+        @include border-radius(22px);
+        font-weight: bold;
+        padding: 9px 18px;
+      }
+    }
+  }
+
+  //your-result
+  .your-result {
+    position: relative;
+    background: $lightgry;
+    height: 297px;
+    margin-bottom: 35px;
+
+    .text-middle {
+      @include center-content;
+      width: 100%;
+      padding: 0px 60px;
+
+      h4 {
+        font-size: 27px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $lightblk;
+        text-align: center;
+        margin: 25px 0px 30px;
+
+      }
+
+      h3 {
+        font-size: 48.18px;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: $pinkcolor;
+        text-align: center;
+      }
+
+      p {
+        font-size: 14px;
+        color: $lightblk;
+        text-align: center;
+      }
+    }
+  }
+}

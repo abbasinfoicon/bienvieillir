@@ -1,0 +1,114 @@
+.logged {
+  @include full-width;
+  margin: 50px 0px 40px;
+
+  //thems-list
+  .thems-list {
+    p {
+      font-size: 12.99px;
+      font-weight: 100;
+      color: $lightblk;
+      text-transform: uppercase;
+    }
+
+    //line
+    .line {
+      width: 26px;
+      height: 2px;
+      background: $lightblk;
+    }
+
+    h3 {
+      font-size: 20.98px;
+      color: $purple;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    //delete-img
+    .delete-img {
+      background: rgba(82, 82, 82, .10) url(#{$imageUrl}/delete.png);
+      height: 42px;
+      width: 41px;
+      background-repeat: no-repeat;
+      @include border-radius(22px);
+      background-position: center;
+      float: right;
+    }
+
+    .divider {
+      width: 100%;
+      height: 8px;
+      background: #e6e6e6;
+      float: left;
+      margin: 40px 0px;
+    }
+  }
+
+  //pager-and-button
+  .pager-and-button{
+    margin: 60px 0px;
+    .btn-previous{
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $white;
+      background: $lightpurple;
+      @include border-radius(22px);
+      text-align: center;
+      width: 169px;
+      @include i-pad {
+        width: 130px;
+      }
+      @include mobile-lg{
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .btn-next{
+      @extend .btn-previous;
+      text-align: center;
+      float: right;
+      @include mobile-lg{
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .pager-info{
+      li{
+        display: inline-block;
+        &.active{
+          a{
+            background-color: $white;
+            color: $lightpurple;
+            border: 1px solid $lightpurple;
+          }
+        }
+        a{
+          text-align: center;
+          height: 39px;
+          width: 39px;
+          background: $lightpurple;
+          color: $white;
+          display: block;
+          @include border-radius(22px);
+          line-height: 39px;
+          border: 1px solid $lightpurple;
+          margin: 0px 5px;
+          @include i-pad {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+          }
+          @include mobile-lg{
+            float: none;
+            text-align: center;
+            margin: 15px;
+          }
+        }
+      }
+    }
+  }
+}

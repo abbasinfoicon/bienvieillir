@@ -1,0 +1,76 @@
+//all-article
+.all-article{
+  .banner-img {
+    margin: 0px 0px 53px;
+  }
+
+
+  //pager-and-button
+  .pager-and-button {
+    margin: 60px 0px;
+    .btn-previous {
+      font-size: 14px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $white;
+      background: $pinkcolor;
+      @include border-radius(22px);
+      text-align: center;
+      width: 169px;
+      @include i-pad {
+        width: 130px;
+      }
+      @include mobile-lg{
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .btn-next {
+      @extend .btn-previous;
+      text-align: center;
+      float: right;
+      @include mobile-lg{
+        float: none;
+        text-align: center;
+        width: 100%;
+      }
+    }
+    .pager-info {
+      float: none;
+      margin: 0;
+      li {
+        display: inline-block;
+        &.active {
+          a {
+            background-color: $white;
+            color: $pinkcolor;
+            border: 1px solid $pinkcolor;
+          }
+        }
+        a {
+          text-align: center;
+          height: 39px;
+          width: 39px;
+          background: $pinkcolor;
+          color: $white;
+          display: block;
+          @include border-radius(22px);
+          line-height: 39px;
+          border: 1px solid $pinkcolor;
+          margin: 0px 5px;
+          @include i-pad {
+            width: 30px;
+            height: 30px;
+            line-height: 30px;
+          }
+          @include mobile-lg{
+            float: none;
+            text-align: center;
+            margin: 15px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,151 @@
+// bootstrap
+@import "../vendor/stylesheets/bootstrap";
+// variable
+@import "variable";
+// Mixins
+@import "mixins";
+
+// Gill Sans normal
+@font-face {
+  font-family: 'Gill Sans MT';
+  src: url('#{$fontPath}/GillSansMT.woff2') format('woff2'),
+  url('#{$fontPath}/GillSansMT.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Gill Sans bold
+@font-face {
+  font-family: 'Gill Sans MT';
+  src: url('#{$fontPath}/GillSansMT-Bold.woff2') format('woff2'),
+  url('#{$fontPath}/GillSansMT-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+// Gill Sans italic
+@font-face {
+  font-family: 'Gill Sans MT';
+  src: url('#{$fontPath}/GillSansMT-Italic.woff2') format('woff2'),
+  url('#{$fontPath}/GillSansMT-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+
+/*img*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+// carousel
+.carousel{
+  width: 100%;
+  float: left;
+}
+
+/*appearance none*/
+input, select, textarea, button {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  border: none;
+}
+
+// default
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+// button
+button{
+  outline: none;
+}
+
+/*a link*/
+a, a:focus, a:hover {
+  text-decoration: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  @include transition(all 0.4s ease);
+}
+
+/*select*/
+select::-ms-expand {
+  display: none;
+  background-origin: border-box;
+}
+
+/*-- container --*/
+.container {
+  @include lg-desktopmin-1200 {
+    width: 1131px;
+  }
+}
+
+/*body*/
+body {
+  background-color: $white;
+  color: #595959;
+  font-size: 14px;
+  font-kerning: none;
+  @include gillsmith-normal;
+}
+
+// vertical-block
+.vertical-block {
+  display: table;
+  height: 100%;
+  width: 100%;
+  float: left;
+  .cell {
+    vertical-align: middle;
+    display: table-cell;
+  }
+}
+
+/*body, html*/
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+// import scss files
+// header
+@import "header";
+// home
+@import "home";
+// home-popup
+@import "popup-home";
+//Article
+@import "article";
+//contact-us
+@import "contact-us";
+//private-area
+@import "private-area";
+// footer
+@import "footer";
+// contact-an-advisor
+@import "contact-an-advisor";
+// personal-informations
+@import "personal-informations";
+// logged
+@import "logged";
+// application-placement
+@import "application-placement";
+// application-placement
+@import "be-accompanied";
+//legal-notice
+@import "legal-notice";
+//all-article
+@import "all-article";
+//retirement-home
+@import "retirement-home";

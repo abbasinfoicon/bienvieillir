@@ -1,0 +1,134 @@
+// footer-area
+.footer-area {
+  @include full-width;
+  // nav-informe
+  .nav-informe ul li.darkblue {
+    margin-left: 0;
+  }
+
+  @include lg-desktopmin-1200 {
+    .col-sm-4 {
+      width: 30%;
+    }
+    .col-sm-8 {
+      width: 70%;
+    }
+  }
+
+  // partenariat
+  .partenariat {
+    font-style: italic;
+    display: inline-block;
+    font-size: 19.93px;
+    margin-top: 29px;
+    margin-bottom: 24px;
+  }
+
+  // copyright-footer
+  .copyright-footer {
+    @include full-width;
+    background: #4c474e;
+    text-align: center;
+    padding: 8px 0px;
+
+    &, a {
+      color: $white;
+    }
+
+    a:hover {
+      color: rgba(255, 255, 255, 0.70);
+    }
+
+    // li
+    li {
+      text-transform: uppercase;
+      display: inline-block;
+      position: relative;
+      font-size: 13px;
+      padding: 10px 37px;
+      @include mobile-lg {
+        padding: 8px 16px;
+      }
+      @include mobile-sm {
+        padding: 5px 8px;
+      }
+
+      &:after {
+        content: '';
+        width: 6px;
+        height: 6px;
+        background: #a6a3a7;
+        position: absolute;
+        right: -3px;
+        margin-top: -3px;
+        top: 50%;
+        border-radius: 50px;
+        -webkit-border-radius: 50px;
+        -ms-border-radius: 50px;
+        -moz-border-radius: 50px;
+        -o-border-radius: 50px;
+        @include mobile-sm {
+          display: none;
+        }
+      }
+
+      &:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+  // nav-brand
+  .nav-brand {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    img {
+      width: 204px;
+    }
+  }
+
+  // nav-brand-text
+  .nav-brand-text {
+    font-size: 14px;
+    color: #595959;
+    line-height: 1.2;
+  }
+
+  // nav-informe
+  .nav-informe {
+    margin-top: 41px;
+    @include tabletlg {
+      ul {
+        width: 100%;
+      }
+    }
+    @include tablet {
+      margin-top: 31px;
+    }
+    @include i-pad {
+      margin-top: 22px;
+    }
+    @include mobile-lg {
+      margin-top: 11px;
+    }
+    // ul
+    ul li {
+      @include lg-desktopmin-1300 {
+        margin-right: 54px;
+      }
+      @include tabletlg {
+        margin-right: 0;
+        width: 50%;
+        float: left;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  // top-footer
+  .top-footer {
+    padding-top: 32px;
+  }
+}
+

@@ -1,0 +1,193 @@
+.application-placement {
+  @include full-width;
+  margin: 50px 0px 97px;
+
+  .chataignoux {
+    h3 {
+      margin-bottom: 0px;
+    }
+  }
+
+  //the-resident
+  .the-resident {
+
+    p {
+      font-size: 13px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: $lightblk;
+      margin-bottom: 27px;
+    }
+
+    form {
+      .form-group {
+        .radio-inline{
+          input{
+            height: auto;
+            -moz-appearance: radio;
+            -webkit-appearance: radio;
+          }
+        }
+        margin-bottom: 10px;
+        @include lgdesktop-min-992 {
+          &.pr-5 {
+            padding-right: 5px;
+          }
+          &.pl-5 {
+            padding-left: 5px;
+          }
+        }
+        label {
+          font-size: 13.07px;
+          text-transform: uppercase;
+          font-weight: normal;
+
+        }
+
+        input {
+          font-size: 16px;
+          font-style: italic;
+          color: $lightblk;
+          opacity: 0.5;
+          @include border-radius(22px);
+          height: 39px;
+          box-shadow: none;
+          &:focus{
+            outline: none;
+          }
+        }
+
+        select {
+          @extend input;
+          border: 1px solid #cdcdcd;
+          background: url('#{$imageUrl}/select-arrow.png');
+          background-repeat: no-repeat;
+          background-position: right 15px center;
+        }
+
+        .btn-new-resident {
+          font-size: 10.34px;
+          font-weight: 100;
+          text-transform: uppercase;
+          color: $lightpurple;
+          background: transparent;
+          border: 1px solid $lightpurple;
+          @include border-radius(22px);
+          margin: 22px 0px 38px;
+          padding: 11px 23px;
+        }
+      }
+    }
+  }
+
+  .your-wishes {
+    @extend .the-resident;
+  }
+
+
+  .the-contact {
+    @extend .the-resident;
+
+    p {
+      margin-top: 43px;
+      margin-bottom: 18px;
+    }
+
+    p.mandatory {
+      font-size: 9.64px;
+      font-weight: 100;
+      color: $lightblk;
+      opacity: .3;
+      text-transform: capitalize;
+      margin: 15px 13px 25px;
+    }
+
+    h4 {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-weight: normal;
+      color: $lightblk;
+      margin: 0 8px 5px;
+    }
+
+    //checkbox
+    .control-group{
+      margin-left: 5px;
+    }
+    .control {
+      position: relative;
+      padding-left: 15px;
+      cursor: pointer;
+      font-size: 12.53px;
+      font-weight: 100;
+      color: $lightblk;
+      text-transform: uppercase;
+      margin-top: 6px;
+
+      input {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+      }
+    }
+
+    .control_indicator {
+      position: absolute;
+      top: 3px;
+      left: 0px;
+      height: 11px;
+      width: 11px;
+      background: $white;
+      border: 1px solid $lightblk;;
+    }
+
+
+    .control input:disabled ~ .control_indicator {
+      background: $lightblk;;
+      opacity: 0.6;
+      pointer-events: none;
+    }
+
+    .control_indicator:after {
+      box-sizing: unset;
+      content: '';
+      position: absolute;
+      display: none;
+    }
+
+    .control input:checked ~ .control_indicator:after {
+      display: block;
+    }
+
+    .control-checkbox .control_indicator:after {
+      content: "";
+      left: 1px;
+      top: 1px;
+      width: 7px;
+      height: 7px;
+      background: $lightblk;
+    }
+
+    .control-checkbox input:disabled ~ .control_indicator:after {
+      border-color: #7b7b7b;
+    }
+
+    .btn-send {
+      font-size: 13.9px;
+      color: $white;
+      background: $lightpurple;
+      @include border-radius(22px);
+      float: right;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 9px 56px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.the-resident {
+  margin-top: 12px;
+  float: left;
+  width: 100%;
+}
